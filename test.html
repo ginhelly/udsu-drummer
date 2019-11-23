@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Ударник</title>
+    <link href="css/custom.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/wtf.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/liba.js"></script>
+</head>
+<body onload="init()">
+    <div class="container">
+        <div class="card border-0 shadow my-5">
+            <div class="card-body p-5">
+                <p class="lead">Возьмите, пожалуйста, в руки манипулятор типа "мышь" и покажите нам, где, по-вашему, в слове ниже должно стоять ударение. <s>А мы посмеёмся.</s><br />Кстати, мы специально не будем показывать вам букву ё, чтобы не было слишком просто</p>
+                <h1 class="font-weight-heavy" id="main" style="text-align:center">
+                    
+                </h1>
+                <p style="text-align: center; display: none; font-style: italic; font-size: smaller", id="note"></p>
+                <div style="height: 20px"></div>
+                <!-- Прогресс бар, т.к. я ебанутый-->
+                <div class="progress">
+                    <div id="bar_succ" class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div id="bar_dan" class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <!-- Счетчик грехов-->
+                <h3 style="text-align: center"><p class="lead mb-0">Счётчик моих грехов: </p> <p style="display:inline !important" id="winrate">0/0</p></h3>
+                <p style="text-align: center; font-style: italic" id="res"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
